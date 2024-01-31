@@ -68,6 +68,11 @@ header{
     padding: 50px;
 }
 
+.service-col p {
+    width: 200px;
+    margin-top: 10px;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
