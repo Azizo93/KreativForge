@@ -1,21 +1,35 @@
-.header{
+/* ---------- Header Section ---------- */
+header{
     min-height: 60vh;
-    width: 100%;
-    background-image: url(../images/about-banner.png);
+    background-color: #1F2937;
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
-h1 {
-    font-size: 48px;
-    font-weight: bold;
-    color: #F9FAF8;
+.header-content {
+    display: flex;
+    align-items: flex-start;
 }
 
-.intro p{
+.text-box {
+    flex: 1;
+    text-align: left;
+    padding: 50px 20px 20px 200px;
+}
+
+.text-box h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.text-box p {
     font-size: 18px;
     color: #F9FAF8;
+    margin-bottom: 15px;
 }
 
 .about-content {
@@ -25,69 +39,152 @@ h1 {
     margin-top: 20px;
 }
 
+.hero-btn {
+    display: block;
+    text-decoration: none;
+    color: #E5E7EB;
+    padding: 2px 18px;
+    font-size: 14px;
+    background-color: #3882f6;
+    border: 1px solid #3882f6;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero-img {
+    width: 400px;
+    padding: 50px 200px 20px 50px;
+}
+
+/* ---------- About Section ---------- */
+
+.about-content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.centered-h2 {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1F2937;
+    padding: 50px;
+}
+
+.articles-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .about-item {
-    width: 23%;
-    padding: 20px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    text-align:  center;
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
 }
 
 .about-item img {
-    width: 150px;
-    border-radius: 5px;
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
 }
 
-.about-item h2 {
+.about-item h4 {
     font-size: 24px;
-    color: black;
+    font-weight: bold;
+    color: #1F2937;
     margin-top: 10px;
 }
 
 .about-item p {
-    font-size: 18px;
-    color: black;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 25px;
+    text-align: left;
 }
+
+/* ---------- Quote Section ---------- */
 
 .quote {
     background-color: #E5E7EB;
-    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.quote h3 {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1F2937;
+    padding: 50px;
 }
 
 .quote p {
-    font-size: 18px;
+    width: 70%;
+    font-size: 36px;
+    font-weight: thin;
     font-style: italic;
     color: #1F2937;
+    padding-bottom: 100px; 
+    position: relative;
+    text-align: center;
 }
 
-.call-to-action {
-    background-color: #3882F6;
-    color: #F9FAF8;
-    padding: 20px;
-}
-
-.call-to-action h2 {
-    font-size: 18px;
+.quote-author {
+    display: block;
+    font-size: 14px;
+    text-align: right;
+    color: #1F2937;
+    font-style: normal;
     font-weight: bold;
 }
 
+/* ---------- Call to Action Section ---------- */
+
+.call-to-action {
+    background-color: #3882f6;
+    width: 60%;
+    margin: 70px auto;
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.call-to-action-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.call-to-action h4 {
+    font-size: 18px;
+    font-weight: extra-bold;
+    color: #E5E7EB;
+    margin-bottom: 3px;
+}
 
 .call-to-action p {
-    font-size: 18px;
-    color: #F9FAF8;
+    font-size: 14px;
+    color: #E5E7EB;
 }
 
 .cta-button {
-    background-color: #3882F6;
-    color: #F9FAF8;
-    padding: 10px 20px;
-    font-size: 18px;
-    text-decoration: none;
     display: inline-block;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
-    background-color: #1F2937;
+    text-decoration: none;
+    color: #E5E7EB;
+    padding: 2px 20px;
+    font-size: 14px;
+    background-color: #3882f6;
+    border: 1px solid #F9FAF8;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
 }
