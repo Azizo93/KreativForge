@@ -1,8 +1,86 @@
-.header{
+/* ---------- Header Section ---------- */
+header {
     min-height: 60vh;
-    width: 100%;
-    background-image: url(../images/placeholder-banner.png);
+    background-color: #1F2937;
     background-position: center;
     background-size: cover;
     position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-box {
+    flex: 1;
+    text-align: left;
+    padding: 50px 20px 20px 200px;
+}
+
+.text-box h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    font-size: 18px;
+    color: #F9FAF8;
+    margin-bottom: 15px;
+}
+
+.hero-img {
+    width: 400px;
+    padding: 50px 200px 20px 50px;
+}
+
+/*--------Services Section--------*/
+
+main {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+section.services {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+section.services#project-management,
+section.services#system-management {
+    flex-direction: row-reverse;
+}
+
+section.services .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    padding: 0 120px 0 0;
+}
+
+section.services#project-management .text-box,
+section.services#system-management .text-box {
+    text-align: right;
+    padding: 0 0 0 120px;
+}
+
+section.services .text-box h2,
+section.services .text-box p {
+    color: #1F2937;
+}
+
+section.services img {
+    width: 30%;
+    height: 60%;
+    border-radius: 20px;
 }
