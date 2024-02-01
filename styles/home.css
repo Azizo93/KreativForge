@@ -3,14 +3,14 @@
 header{
     min-height: 60vh;
     background-color: #1F2937;
-    background-position: center;
-    background-size: cover;
+    width: 100%;
     position: relative;
 }
 
 .header-content {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .text-box {
@@ -48,7 +48,12 @@ header{
 .hero-img {
     width: 400px;
     padding: 50px 200px 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
+
+
 
 
 /* ---------- Our Offings Section ---------- */
@@ -167,3 +172,67 @@ header{
     cursor: pointer;
 }
 
+
+/* ---------- Media Query ---------- */
+
+@media (max-width: 700px) {
+    .text-box {
+        padding-left: 20px;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .service-col {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .service-col img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .service-col p {
+        width: 100%;
+    }
+
+    
+
+    .testimonial p {
+        width: 90%;
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    
+    .testimonial-author {
+        text-align: center;
+    }
+    
+    
+    
+    .call-to-action {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .call-to-action-content {
+        padding: 20px;
+    }
+    
+    .call-to-action h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .call-to-action p {
+        font-size: 16px;
+    }
+    
+    .hero-btn-alt {
+        margin-top: 20px;
+    }
+}
