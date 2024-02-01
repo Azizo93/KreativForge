@@ -6,3 +6,88 @@
     background-size: cover;
     position: relative;
 }
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.intro p{
+    font-size: 18px;
+    color: #F9FAF8;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.about-item {
+    width: 23%;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    text-align:  center;
+}
+
+.about-item img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.about-item h2 {
+    font-size: 24px;
+    color: black;
+    margin-top: 10px;
+}
+
+.about-item p {
+    font-size: 18px;
+    color: black;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 20px;
+}
+
+.quote p {
+    font-size: 18px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.call-to-action {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 20px;
+}
+
+.call-to-action h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.call-to-action p {
+    font-size: 18px;
+    color: #F9FAF8;
+}
+
+.cta-button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #1F2937;
+}
