@@ -31,7 +31,7 @@
 
 /*--------Services Section--------*/
 
-main {
+main section.container-services {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@ main {
     margin: 50px auto;
 }
 
-section.services {
+div.services {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -47,12 +47,12 @@ section.services {
     margin: 40px 0;
 }
 
-section.services#project-management,
-section.services#system-management {
+div.services#project-management,
+div.services#system-management {
     flex-direction: row-reverse;
 }
 
-section.services .text-box {
+div.services .text-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,29 +60,45 @@ section.services .text-box {
     padding: 0 120px 0 0;
 }
 
-section.services#project-management .text-box,
-section.services#system-management .text-box {
+div.services#project-management .text-box,
+div.services#system-management .text-box {
     padding: 0 0 0 120px;
 }
 
-section.services .text-box h2,
-section.services .text-box p {
+div.services .text-box h2,
+div.services .text-box p {
     color: #1F2937;
     padding: 5px 0;
 }
 
-section.services .text-box h2 {
+div.services .text-box h2 {
     font-size: 36px;
     font-weight: 900;
 }
 
-section.services .text-box p {
+div.services .text-box p {
     font-size: 18px;
 }
 
-section.services img {
+div.services img {
     width: 40%;
     height: 350px;
     border-radius: 20px;
     object-fit: cover;
+}
+
+section.container-expertise {
+    width: 100%;
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    color: #1F2937;
+    margin-bottom: 50px;
+    padding: 90px 0;
+}
+
+section.container-expertise .text-box li {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: light;
 }
