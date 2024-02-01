@@ -81,6 +81,7 @@ section.services .text-box p {
 
 section.services img {
     width: 30%;
-    height: 60%;
+    height: 250px;
     border-radius: 20px;
+    object-fit: cover;
 }
