@@ -227,3 +227,64 @@ a {
 a:hover {
   background-color: #000;
 }
+
+@media (max-width: 575px) {
+  .pricing {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card {
+    flex: 0 0 25%;
+  }
+  .front,
+  .back {
+    position: relative;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 845px) {
+  .pricing {
+    margin: 3rem;
+  }
+  .pricing-cards {
+    gap: 0.5rem;
+  }
+  .card {
+    flex: 0 0 36%;
+  }
+}
+
+@media (min-width: 846px) and (max-width: 960px) {
+  .pricing {
+    margin: 3rem auto;
+  }
+  .pricing-cards {
+    gap: 1rem;
+  }
+  .card {
+    flex: 0 0 28%;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1580px) {
+  .pricing {
+    margin: 3rem auto;
+  }
+  .pricing-cards {
+    gap: 2rem;
+  }
+  .card {
+    flex: 0 0 25%;
+  }
+}
