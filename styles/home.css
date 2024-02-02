@@ -187,6 +187,10 @@ header{
     .text-box {
         padding-left: 20px;
     }
+
+    .hero-img {
+        width: 300px;
+    }
     
     .row {
         display: flex;
