@@ -21,7 +21,7 @@ header{
 
 .text-box h1 {
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: 800;
     color: #F9FAF8;
     padding: 5px;
     margin-bottom: 10px;
@@ -68,7 +68,7 @@ header{
 
 .info h2 {
     font-size: 36px;
-    font-weight: extra-bold;
+    font-weight: 800;
     color: #1F2937;
     padding: 50px;
 }
@@ -104,7 +104,7 @@ header{
 
 .testimonial h3 {
     font-size: 36px;
-    font-weight: extra-bold;
+    font-weight: 800;
     color: #1F2937;
     padding: 50px;
 }
@@ -150,7 +150,7 @@ header{
 
 .call-to-action h4 {
     font-size: 18px;
-    font-weight: extra-bold;
+    font-weight: 800;
     color: #E5E7EB;
 }
 
