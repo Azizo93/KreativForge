@@ -34,16 +34,20 @@ header{
 }
 
 .hero-btn {
-    display: block;
-    text-decoration: none;
-    color: #E5E7EB;
-    padding: 2px 18px;
+    border: 1px solid #3882F6;
+    background-color: #3882F6;
+    padding: 7px 20px;
     font-size: 14px;
-    background-color: #3882f6;
-    border: 1px solid #3882f6;
-    border-radius: 8px;
-    cursor: pointer;
+    border-radius: 7px;
+    color: #F9FAF8;
+    text-decoration: none;
 }
+
+.hero-btn:hover {
+    background-color: #F9FAF8;
+    color: #3882F6;
+    border: 1px solid #3882F6;
+  }
 
 .hero-img {
     width: 400px;
@@ -161,16 +165,20 @@ header{
 
 
 .hero-btn-alt {
-    display: inline-block;
-    text-decoration: none;
-    color: #E5E7EB;
-    padding: 2px 20px;
-    font-size: 14px;
-    background-color: #3882f6;
     border: 1px solid #F9FAF8;
-    border-radius: 8px;
-    cursor: pointer;
+    background-color: #3882F6;
+    padding: 7px 20px;
+    font-size: 14px;
+    border-radius: 7px;
+    color: #F9FAF8;
+    text-decoration: none;
 }
+
+.hero-btn-alt:hover {
+    background-color: #F9FAF8;
+    color: #3882F6;
+    border: 1px solid #3882F6;
+  }
 
 
 /* ---------- Media Query ---------- */

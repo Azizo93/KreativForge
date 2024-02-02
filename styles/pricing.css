@@ -209,7 +209,9 @@ card:hover.back {
 }
 
 .link:hover {
-  background-color: #000;
+  background-color: #F9FAF8;
+  color: #3882F6;
+  border: 1px solid #3882F6;
 }
 
 @media (max-width: 575px) {
