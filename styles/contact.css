@@ -1,0 +1,253 @@
+:root {
+  --dark-background: #1f2937;
+  --action-background: #3882f6;
+  --qoute-background: #e5e7eb;
+  --button-background: var(--action-background);
+  --main-text: #f9faf8;
+  --info-text: var(--dark-background);
+  --header-link-text: var(--qoute-background);
+  --header-logo-text: var(--main-text);
+  --quote-text: var(--info-text);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- Text styling ---------- */
+.main-txt {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--main-text);
+}
+.secondary-txt,
+.header-link {
+  font-size: 18px;
+  color: var(--header-link-text);
+}
+.logo-txt {
+  font-size: 24px;
+  color: var(--header-logo-text);
+}
+
+.info-header-txt {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--info-text);
+}
+.quote-text {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--quote-text);
+}
+/* ---------- Common elements ---------- */
+
+.btn {
+  background-color: var(--button-background);
+  border: 0.5px solid #ffffff;
+  border-radius: 8px;
+  color: #ffffff;
+
+  padding: 0.25em;
+  text-decoration: none;
+}
+.action {
+  background-color: var(--action-background);
+  color: #ffffff;
+}
+.btn:hover {
+  background-color: #ffffff;
+  color: var(--button-background);
+  border-color: var(--action-background);
+  cursor: pointer;
+  transition: 0.25s;
+}
+.btn:active {
+  background-color: var(--button-background);
+  color: #ffffff;
+  border: 2.5px solid var(--dark-background);
+  transition: none;
+}
+
+/* ---------- Header section styling ---------- */
+.header {
+  background-color: var(--dark-background);
+  color: var(--header-logo-text);
+}
+
+.header-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  width: 40%;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+.contact-info > * {
+  margin: 1em;
+}
+.email {
+  text-decoration: none;
+}
+.email:hover {
+  text-decoration: underline;
+}
+.adress {
+  line-height: 2;
+}
+.adress > * {
+  display: inline-block;
+}
+
+.first-adress {
+  margin-right: 2em;
+}
+/* ---------- Main styling ---------- */
+main {
+  flex-grow: 1;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em;
+  flex-grow: 1;
+}
+.main-content > h1 {
+  font-size: 48px;
+  color: #1f2937;
+}
+/* ---------- Form styling ---------- */
+.contact-form {
+  width: 100%;
+  flex-grow: 1;
+}
+.input-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-top: 1em;
+}
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+  padding: 1.5em 0 0 0;
+  outline: none;
+}
+.underline {
+  transition: all 0.5s;
+  display: inline-block;
+  bottom: 0;
+  left: -100%;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #1f2937;
+}
+
+.input-wrapper > input:focus + .underline {
+  left: 0;
+}
+.input-wrapper label {
+  display: block;
+  margin-bottom: 2em;
+}
+textarea {
+  width: 100%;
+  height: 20vh;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  resize: none;
+}
+
+textarea:focus {
+  border-color: #3882f6;
+  outline: none;
+}
+
+.budget-options {
+  margin: 2em 0;
+}
+
+.budget-options span {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.options {
+  display: flex;
+  gap: 2em;
+}
+
+.options input[type="radio"] {
+  display: none;
+}
+
+.options label {
+  background-color: none;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border: 1px solid #3882f6;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.options input[type="radio"]:checked + label {
+  background-color: #3882f6;
+  color: #fff;
+}
+
+.options label:hover {
+  background-color: #ccc;
+}
+
+.btn {
+  width: 150px;
+  margin-top: 1em;
+}
+
+@media (min-width: 1600px) {
+  .header-section {
+    justify-content: center;
+    align-items: center;
+  }
+  .adress {
+    display: flex;
+    flex-direction: column;
+  }
+  .second-adress {
+    margin-top: 2em;
+    margin-left: 0;
+  }
+  main {
+    display: flex;
+  }
+  main > * {
+    width: 50%;
+  }
+  .banner {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .banner {
+    display: none;
+  }
+}
