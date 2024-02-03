@@ -92,8 +92,12 @@ section.services .text-box p {
     font-size: 18px;
 }
 
-section.services img {
-    width: 40%;
+section.services picture {
+    width: 480px;
+}
+
+section.services picture img {
+    width: 100%;
     height: 350px;
     border-radius: 20px;
     object-fit: cover;
@@ -227,7 +231,11 @@ section.container-pricing .text-box p {
         font-size: 28px;
     }
 
-    section.services img {
+    section.services picture {
+        width: 100%;
+    }
+
+    section.services picture img {
         width: 100%;
         height: 350px;
         border-radius: 0;
@@ -263,7 +271,7 @@ section.container-pricing .text-box p {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
     .header-content {
         width: 100%;
         justify-content: center;
@@ -312,8 +320,12 @@ section.container-pricing .text-box p {
         padding: 0;
     }
 
-    section.services img {
+    section.services picture {
         width: 80%;
+    }
+
+    section.services picture img {
+        width: 100%;
     }
 
     section.container-expertise .text-box ul {
