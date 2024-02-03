@@ -51,7 +51,7 @@ main section.container-services {
     margin: 50px auto;
 }
 
-div.services {
+section.services {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -59,12 +59,12 @@ div.services {
     margin: 40px 0;
 }
 
-div.services#project-management,
-div.services#system-management {
+section.services#project-management,
+section.services#system-management {
     flex-direction: row-reverse;
 }
 
-div.services .text-box {
+section.services .text-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,27 +72,27 @@ div.services .text-box {
     padding: 0 120px 0 0;
 }
 
-div.services#project-management .text-box,
-div.services#system-management .text-box {
+section.services#project-management .text-box,
+section.services#system-management .text-box {
     padding: 0 0 0 120px;
 }
 
-div.services .text-box h2,
-div.services .text-box p {
+section.services .text-box h2,
+section.services .text-box p {
     color: #1F2937;
     padding: 5px 0;
 }
 
-div.services .text-box h2 {
+section.services .text-box h2 {
     font-size: 36px;
     font-weight: 900;
 }
 
-div.services .text-box p {
+section.services .text-box p {
     font-size: 18px;
 }
 
-div.services img {
+section.services img {
     width: 40%;
     height: 350px;
     border-radius: 20px;
@@ -199,35 +199,35 @@ section.container-pricing .text-box p {
         margin-top: 0;
     }
 
-    div.services {
+    section.services {
         flex-direction: column-reverse;
         justify-content: center;
         margin-top: 0;
     }
 
-    div.services#project-management,
-    div.services#system-management {
+    section.services#project-management,
+    section.services#system-management {
         flex-direction: column-reverse;
         margin-top: 0;
     }
 
-    div.services .text-box {
+    section.services .text-box {
         width: 90%;
         padding: 0;
         text-align: center;
         margin: 0 auto;
     }
 
-    div.services#project-management .text-box,
-    div.services#system-management .text-box {
+    section.services#project-management .text-box,
+    section.services#system-management .text-box {
         padding: 0;
     }
 
-    div.services .text-box h2 {
+    section.services .text-box h2 {
         font-size: 28px;
     }
 
-    div.services img {
+    section.services img {
         width: 100%;
         height: 350px;
         border-radius: 0;
@@ -289,30 +289,30 @@ section.container-pricing .text-box p {
         width: 90%;
     }
 
-    div.services {
+    section.services {
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    div.services#project-management,
-    div.services#system-management {
+    section.services#project-management,
+    section.services#system-management {
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    div.services .text-box {
+    section.services .text-box {
         width: 80%;
         padding: 0;
         text-align: center;
         margin-top: 20px;
     }
 
-    div.services#project-management .text-box,
-    div.services#system-management .text-box {
+    section.services#project-management .text-box,
+    section.services#system-management .text-box {
         padding: 0;
     }
 
-    div.services img {
+    section.services img {
         width: 80%;
     }
 
