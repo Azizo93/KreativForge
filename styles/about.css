@@ -42,17 +42,20 @@ header{
 }
 
 .hero-btn {
-    display: block;
-    text-decoration: none;
-    color: #E5E7EB;
-    padding: 2px 18px;
+    border: 1px solid #3882F6;
+    background-color: #3882F6;
+    padding: 7px 20px;
     font-size: 14px;
-    background-color: #3882f6;
-    border: 1px solid #3882f6;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-left: 5px;
+    border-radius: 7px;
+    color: #F9FAF8;
+    text-decoration: none;
 }
+
+.hero-btn:hover {
+    background-color: #F9FAF8;
+    color: #3882F6;
+    border: 1px solid #3882F6;
+  }
 
 .hero-img {
     width: 400px;
@@ -192,12 +195,79 @@ p {
 .cta-button {
     display: inline-block;
     text-decoration: none;
-    color: #E5E7EB;
-    padding: 2px 20px;
+    color: #F9FAF8;
+    padding: 7px 20px;
     font-size: 14px;
     background-color: #3882f6;
     border: 1px solid #F9FAF8;
     border-radius: 8px;
     cursor: pointer;
     margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #F9FAF8;
+    color: #3882F6;
+    border: 1px solid #3882F6;
+  }
+
+
+/* ---------- Media Query ---------- */
+
+@media (max-width: 762px) {
+    .text-box {
+        padding-left: 20px;
+    }
+
+    .hero-img {
+        width: 300px;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .service-col {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .service-col p {
+        width: 100%;
+    }
+
+    .testimonial p {
+        width: 90%;
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    
+    .testimonial-author {
+        text-align: center;
+    }
+    
+    
+    .call-to-action {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .call-to-action-content {
+        padding: 20px;
+    }
+    
+    .call-to-action h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .call-to-action p {
+        font-size: 16px;
+    }
+    
+    .cta-button {
+        margin-top: 20px;
+    }
 }
