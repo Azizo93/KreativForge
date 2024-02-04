@@ -9,7 +9,7 @@
 
 nav {
     display: flex;
-    padding: 2px 100px 2px 100px;
+    padding: 2px 5%;
     justify-content: space-between;
     align-items: center;
     background-color: #1F2937;
@@ -25,24 +25,25 @@ nav img {
 }
 
 .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
     flex: 1;
-    text-align: right;
+    justify-content: flex-end;
 }
 
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
+.nav-links li {
     padding: 20px 12px;
     position: relative;
 }
 
-.nav-links ul li a{
+.nav-links li a {
     font-size: 18px;
     color: #E5E7EB;
     text-decoration: none;
 }
 
-.nav-links ul li::after{
+.nav-links li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -52,7 +53,7 @@ nav img {
     transition: 0.5s;
 }
 
-.nav-links ul li:hover::after{
+.nav-links li:hover::after {
     width: 100%;
 }
 
@@ -73,7 +74,75 @@ footer {
     padding: 18px 0;
 }
 
-/* ---------- Media Query ---------- */
+/* Mobile Navigation Styles */
+
+@media (min-width: 2560px) {
+    nav {
+        padding: 2px 5%;
+    }
+
+    nav p {
+        font-size: 40px;
+    }
+
+    .nav-links li a {
+        font-size: 36px;
+    }
+
+    nav img {
+        width: 60px;
+    }
+
+    footer {
+        padding: 20px 0 20px 0;
+    }
+
+    footer h3 {
+        font-size: 30px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+    
+    .icons .fa-brands{
+        color: #E5E7EB;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav p {
+        font-size: 22px;
+    }
+
+    .nav-links li a {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 10px 0 10px 0;
+    }
+
+    footer h3 {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+    
+    .icons .fa-brands{
+        color: #E5E7EB;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 12px 0;
+        font-size: 15px;
+    }
+}
 
 
 @media (max-width: 700px) {
@@ -84,21 +153,19 @@ footer {
 
     nav p {
         display: inline-block;
+        padding: 5px;
+        margin-top: 10px; /* Add some space between the company name and links */
     }
 
     .nav-links {
+        flex-direction: column;
         text-align: center;
-        margin-top: 10px;
-    }
-
-    .nav-links ul {
         padding: 0;
+        
     }
 
-    .nav-links ul li {
+    .nav-links li {
         display: block;
         padding: 10px;
     }
 }
-
-
