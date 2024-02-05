@@ -1,22 +1,35 @@
 /* ---------- Header Section ---------- */
 
-header{
-    min-height: 60vh;
-    background-color: #1F2937;
-    width: 100%;
-    position: relative;
+body {
+    /* overflow-x: hidden;  */
+    max-width: 1290px;
+    margin: auto;
+    background-color:#F9FAF8;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-.header-content {
+.header-content { 
+    /* min-height: 50vh; */
+    background-color: #1F2937;
+    width: auto;
+    /* position: relative; */
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+}
+.header-content>*{
+    padding: 2em;
 }
 
 .text-box {
     flex: 1;
     text-align: left;
-    padding: 50px 20px 20px 200px;
+    /* padding: 100px 20px 20px 200px; */
+    margin: 0;
 }
 
 .text-box h1 {
@@ -30,7 +43,7 @@ header{
 .text-box p {
     font-size: 18px;
     color: #F9FAF8;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .hero-btn {
@@ -51,78 +64,79 @@ header{
 
 .hero-img {
     width: 400px;
-    padding: 50px 200px 20px 50px;
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
 
-
-
-/* ---------- Our Offings Section ---------- */
+/* ---------- Our Offerings Section ---------- */
 
 
 .info {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-bottom: 100px;
+  
 }
 
 .info h2 {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
-    padding: 50px;
-}
 
-.service-col p {
-    width: 200px;
-    margin-top: 10px;
 }
 
 .row {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.service-col {
+    margin-bottom: 20px;
 }
 
 .service-col img {
     border: 3px solid #3882f6;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: 140px; 
+    height: 140px;
+    max-width: 200px; 
+    
 }
+
+.service-col p {
+    width: 100%;
+    margin-top: 10px;
+}
+
 
 
 /* ---------- Testimonials Section ---------- */
 
 .testimonial {
     background-color: #E5E7EB;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left;
+    text-align: center;
 }
 
-.testimonial h3 {
-    font-size: 36px;
-    font-weight: 800;
-    color: #1F2937;
-    padding: 50px;
+.testimonial blockquote {
+    max-width: 70%;
+    margin: 0 auto;
 }
 
 .testimonial p {
-    width: 70%;
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
-    padding-bottom: 100px; 
-    position: relative;
+    padding: 1em; 
 }
 
-.testimonial-author {
+.testimonial .testimonial-author {
     display: block;
     font-size: 14px;
     text-align: right;
@@ -131,25 +145,18 @@ header{
     font-weight: bold;
 }
 
+
 /* ---------- Call to Action Section ---------- */
 
 .call-to-action {
     background-color: #3882f6;
-    width: 60%;
-    margin: 70px auto;
-    padding: 50px;
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 15px;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: left;
-}
-
-.call-to-action-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-right: 50px;
-    padding-left: 50px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .call-to-action h4 {
@@ -159,6 +166,7 @@ header{
 }
 
 .call-to-action p {
+    padding: 1em;
     font-size: 14px;
     color: #E5E7EB;
 }
@@ -167,8 +175,9 @@ header{
 .hero-btn-alt {
     border: 1px solid #F9FAF8;
     background-color: #3882F6;
-    padding: 7px 20px;
+    padding: 1em;
     font-size: 14px;
+    min-width: 50px;
     border-radius: 7px;
     color: #F9FAF8;
     text-decoration: none;
@@ -181,70 +190,15 @@ header{
   }
 
 
-/* ---------- Media Query ---------- */
 
-@media (max-width: 762px) {
-    .text-box {
-        padding-left: 20px;
+/* Mobile L - 425px */
+@media (max-width: 425px) {
+    .hero-img{
+        max-width: 300px;
+        padding: 0;
+        margin: 0;
     }
-
-    .hero-img {
-        width: 300px;
-    }
-    
-    .row {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .service-col {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .service-col img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .service-col p {
-        width: 100%;
-    }
-
-    
-
-    .testimonial p {
-        width: 90%;
-        font-size: 16px;
-        padding-bottom: 20px;
-    }
-    
-    .testimonial-author {
-        text-align: center;
-    }
-    
-    
-    
-    .call-to-action {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .call-to-action-content {
-        padding: 20px;
-    }
-    
-    .call-to-action h4 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-    
-    .call-to-action p {
-        font-size: 16px;
-    }
-    
-    .hero-btn-alt {
-        margin-top: 20px;
-    }
+  .row{
+    flex-direction: column;
+  }
 }
