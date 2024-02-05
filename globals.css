@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 /* ---------- Navigation Styling ---------- */
-
 
 nav {
     display: flex;
@@ -74,87 +74,16 @@ footer {
     padding: 18px 0;
 }
 
-/* Mobile Navigation Styles */
-
-@media (min-width: 2560px) {
-    nav {
-        padding: 2px 5%;
-    }
-
-    nav p {
-        font-size: 40px;
-    }
-
-    .nav-links li a {
-        font-size: 36px;
-    }
-
-    nav img {
-        width: 60px;
-    }
-
-    footer {
-        padding: 20px 0 20px 0;
-    }
-
-    footer h3 {
-        font-size: 30px;
-    }
-
-    footer p {
-        font-size: 20px;
-    }
-    
-    .icons .fa-brands{
-        color: #E5E7EB;
-        margin: 0 13px;
-        cursor: pointer;
-        padding: 18px 0;
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 1024px) {
-    nav p {
-        font-size: 22px;
-    }
-
-    .nav-links li a {
-        font-size: 16px;
-    }
-
-    footer {
-        padding: 10px 0 10px 0;
-    }
-
-    footer h3 {
-        font-size: 18px;
-    }
-
-    footer p {
-        font-size: 12px;
-    }
-    
-    .icons .fa-brands{
-        color: #E5E7EB;
-        margin: 0 13px;
-        cursor: pointer;
-        padding: 12px 0;
-        font-size: 15px;
-    }
-}
-
 
 @media (max-width: 700px) {
+
     nav {
         flex-direction: column;
         align-items: center;
     }
 
     nav p {
-        display: inline-block;
-        padding: 5px;
-        margin-top: 10px; /* Add some space between the company name and links */
+        margin-top: 10px;
     }
 
     .nav-links {
@@ -164,8 +93,4 @@ footer {
         
     }
 
-    .nav-links li {
-        display: block;
-        padding: 10px;
-    }
-}
+} 
