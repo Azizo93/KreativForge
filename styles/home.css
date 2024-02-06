@@ -1,7 +1,6 @@
 /* ---------- Header Section ---------- */
 
 body {
-    /* overflow-x: hidden;  */
     max-width: 1290px;
     margin: auto;
     background-color:#F9FAF8;
@@ -15,7 +14,6 @@ html, body {
     min-height: 50vh;
     background-color: #1F2937;
     width: auto;
-    /* position: relative; */
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -28,7 +26,6 @@ html, body {
 .text-box {
     flex: 1;
     text-align: left;
-    /* padding: 100px 20px 20px 200px; */
     margin: 0;
 }
 
@@ -98,9 +95,9 @@ html, body {
 
 .service-col {
     margin-bottom: 20px;
-    width: calc(25% - 20px); /* Initially, each column occupies 25% width (4 columns in a row) */
-    flex: 1 0 25%; /* Allow flexibility in width */
-    box-sizing: border-box; /* Include padding and border in width calculation */
+    width: calc(25% - 20px); 
+    flex: 1 0 25%; 
+    box-sizing: border-box; 
 }
 
 .service-col img {
