@@ -228,6 +228,7 @@ html, body {
   }
 
   .call-to-action {
+    width: 90%;
     padding: 30px; 
     text-align: center; 
     display: flex; 
