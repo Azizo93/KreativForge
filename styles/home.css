@@ -12,7 +12,7 @@ html, body {
 }
 
 .header-content { 
-    /* min-height: 50vh; */
+    min-height: 50vh;
     background-color: #1F2937;
     width: auto;
     /* position: relative; */
@@ -22,7 +22,7 @@ html, body {
     justify-content: center;
 }
 .header-content>*{
-    padding: 2em;
+    padding: 4em;
 }
 
 .text-box {
@@ -78,6 +78,7 @@ html, body {
     width: 80%;
     margin: auto;
     text-align: center;
+    padding-bottom: 4em;
   
 }
 
@@ -85,26 +86,29 @@ html, body {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
+    padding: 2em;
 
 }
 
 .row {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .service-col {
     margin-bottom: 20px;
+    width: calc(25% - 20px); /* Initially, each column occupies 25% width (4 columns in a row) */
+    flex: 1 0 25%; /* Allow flexibility in width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 .service-col img {
     border: 3px solid #3882f6;
     border-radius: 10px;
-    width: 140px; 
-    height: 140px;
-    max-width: 200px; 
-    
+    width: 80%;
+    height: auto;
+    max-width: 80%;
 }
 
 .service-col p {
@@ -122,11 +126,13 @@ html, body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 1em;
 }
 
 .testimonial blockquote {
     max-width: 70%;
     margin: 0 auto;
+    padding: 1em;
 }
 
 .testimonial p {
@@ -151,9 +157,8 @@ html, body {
 .call-to-action {
     background-color: #3882f6;
     width: 80%;
-    margin: 1em auto;
-    padding: 1em;
-    border-radius: 15px;
+    margin: 4em auto;
+    padding: 2em;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -166,7 +171,7 @@ html, body {
 }
 
 .call-to-action p {
-    padding: 1em;
+    padding: 0.5em;
     font-size: 14px;
     color: #E5E7EB;
 }
@@ -198,7 +203,59 @@ html, body {
         padding: 0;
         margin: 0;
     }
+
   .row{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  .info h2 {
+    padding: 0.5em;
+  }
+
+  .service-col {
+    width: 100%; /* Single column */
+    flex: 1 0 100%;
+  }
+
+  .row figure {
+    width: 100%;
+    height: auto; 
+    max-width: 300px; 
+  }
+
+  .testimonial p {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .call-to-action {
+    padding: 30px; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+  }
+    
+    
+}
+
+@media (max-width: 768px) {
+    .service-col {
+        width: calc(50% - 20px); /* Two columns in a row */
+        flex: 1 0 50%;
+    }
+}
+
+@media (min-width: 2000px) {
+    .header-content>*{
+        padding: 20em;
+        scale: 150%;
+    }
+
+    .call-to-action {
+        width: 50%;
+        scale: 150%;
+    }
 }
