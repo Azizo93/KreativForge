@@ -4,20 +4,15 @@
 
 /* ---------- Header Section ---------- */
 
-.header {
+.header-content {
     min-height: 60vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/service-hero.jpg);
     background-size: cover;
     position: relative;
-}
-
-.header-content {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    width: 65%;
-    padding-top: 120px;
 }
 
 .header-content .text-box {
@@ -26,14 +21,14 @@
 }
 
 .header-content .text-box h1 {
-    width: 60%;
+    width: 45%;
     font-size: 48px;
     font-weight: 900;
     text-shadow: 0 0 2px #1F2937;
 }
 
 .header-content .text-box p {
-    width: 80%;
+    width: 50%;
     font-size: 18px;
     font-weight: 500;
     text-shadow: 0 0 2px #1F2937;
@@ -56,7 +51,7 @@ main section.container-services {
     margin: 50px auto;
 }
 
-div.services {
+section.services {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -64,12 +59,12 @@ div.services {
     margin: 40px 0;
 }
 
-div.services#project-management,
-div.services#system-management {
+section.services#project-management,
+section.services#system-management {
     flex-direction: row-reverse;
 }
 
-div.services .text-box {
+section.services .text-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,28 +72,32 @@ div.services .text-box {
     padding: 0 120px 0 0;
 }
 
-div.services#project-management .text-box,
-div.services#system-management .text-box {
+section.services#project-management .text-box,
+section.services#system-management .text-box {
     padding: 0 0 0 120px;
 }
 
-div.services .text-box h2,
-div.services .text-box p {
+section.services .text-box h2,
+section.services .text-box p {
     color: #1F2937;
     padding: 5px 0;
 }
 
-div.services .text-box h2 {
+section.services .text-box h2 {
     font-size: 36px;
     font-weight: 900;
 }
 
-div.services .text-box p {
+section.services .text-box p {
     font-size: 18px;
 }
 
-div.services img {
-    width: 40%;
+section.services picture {
+    width: 480px;
+}
+
+section.services picture img {
+    width: 100%;
     height: 350px;
     border-radius: 20px;
     object-fit: cover;
@@ -125,6 +124,8 @@ section.container-expertise .text-box ul {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 section.container-expertise .text-box li {
@@ -176,15 +177,12 @@ section.container-pricing .text-box p {
     transition: 0.6s;
 }
 
-@media screen and (max-width: 762px) {
-    .header {
-        min-height: 100vh;
-        background-position: center;
-    }
-
+@media screen and (max-width: 767px) {
     .header-content {
+        min-height: 70vh;
+        background-position: center;
         width: 100%;
-        padding-top: 50px;
+        justify-content: center;
     }
 
     .header-content .text-box {
@@ -205,34 +203,39 @@ section.container-pricing .text-box p {
         margin-top: 0;
     }
 
-    div.services {
+    section.services {
         flex-direction: column-reverse;
         justify-content: center;
         margin-top: 0;
     }
 
-    div.services#project-management,
-    div.services#system-management {
+    section.services#project-management,
+    section.services#system-management {
         flex-direction: column-reverse;
         margin-top: 0;
     }
 
-    div.services .text-box {
-        width: 100%;
+    section.services .text-box {
+        width: 90%;
         padding: 0;
         text-align: center;
+        margin: 0 auto;
     }
 
-    div.services#project-management .text-box,
-    div.services#system-management .text-box {
+    section.services#project-management .text-box,
+    section.services#system-management .text-box {
         padding: 0;
     }
 
-    div.services .text-box h2 {
+    section.services .text-box h2 {
         font-size: 28px;
     }
 
-    div.services img {
+    section.services picture {
+        width: 100%;
+    }
+
+    section.services picture img {
         width: 100%;
         height: 350px;
         border-radius: 0;
@@ -265,5 +268,79 @@ section.container-pricing .text-box p {
 
     section.container-pricing .text-box h3 {
         padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .header-content {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-content .text-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .header-content .text-box h1 {
+        width: 80%;
+    }
+
+    .header-content .text-box p {
+        width: 80%;
+    }
+
+    main section.container-services {
+        width: 90%;
+    }
+
+    section.services {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    section.services#project-management,
+    section.services#system-management {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    section.services .text-box {
+        width: 80%;
+        padding: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    section.services#project-management .text-box,
+    section.services#system-management .text-box {
+        padding: 0;
+    }
+
+    section.services picture {
+        width: 80%;
+    }
+
+    section.services picture img {
+        width: 100%;
+    }
+
+    section.container-expertise .text-box ul {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section.container-pricing {
+        flex-direction: column;
+        padding: 50px 60px;
+        width: 80%;
+    }
+
+    section.container-pricing .text-box {
+        width: 100%;
+        margin-bottom: 15px;
     }
 }
