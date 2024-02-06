@@ -20,7 +20,7 @@ html, body {
     justify-content: center;
 }
 .header-content>*{
-    padding: 4em;
+    padding: 4em 8em;
 }
 
 .text-box {
@@ -61,7 +61,6 @@ html, body {
 
 .hero-img {
     width: 400px;
-
     display: flex;
     flex-wrap: wrap;
     align-items: center;
