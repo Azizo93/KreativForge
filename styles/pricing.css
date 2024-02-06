@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -217,7 +223,7 @@ card:hover.back {
 @media (max-width: 575px) {
   .pricing {
     height: 100%;
-    margin: 0 auto;
+    margin: 1rem auto;
     text-align: center;
     width: 100%;
   }
@@ -241,7 +247,7 @@ card:hover.back {
 
 @media (min-width: 576px) and (max-width: 845px) {
   .pricing {
-    margin: 3rem;
+    margin: 6rem auto;
   }
   .pricing-cards {
     gap: 0.5rem;
@@ -253,7 +259,7 @@ card:hover.back {
 
 @media (min-width: 846px) and (max-width: 960px) {
   .pricing {
-    margin: 3rem auto;
+    margin: 6rem auto;
   }
   .pricing-cards {
     gap: 1rem;
@@ -265,7 +271,7 @@ card:hover.back {
 
 @media (min-width: 961px) and (max-width: 1580px) {
   .pricing {
-    margin: 3rem auto;
+    margin: 6rem auto;
   }
   .pricing-cards {
     gap: 2rem;
