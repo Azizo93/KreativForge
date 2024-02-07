@@ -138,7 +138,6 @@ section.container-pricing {
     width: 60%;
     background-color: #3882F6;
     margin-bottom: 50px;
-    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
